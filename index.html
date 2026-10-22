@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liftoff YSWS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#FFF0F0]">
+    <div class="flex items-center justify-center">
+        <div class="nav flex items-center justify-between text-white mt-5 py-5 px-8 md:px-[10%] w-[90%] max-w-[700px] bg-[#792E29]">
+            <div class="logo font-bold">
+                <p>Liftoff</p>
+            </div>
+            <div class="self-center hidden lg:flex links w-[30%] justify-between">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Rewards</a>
+                <a href="">FAQ</a>
+            </div>
+            <div class="borderHover cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
+                <p>RSVP Now!</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        font-family: 'Geist Mono';
+    }
+    .borderHover{
+        transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .borderHover:hover {
+        outline: 1px solid #F9E1D9;
+        outline-offset: 4px;
+        border-radius: 20px;
+    }
+</style>
+</html>
