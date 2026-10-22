@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#FFF0F0]">
-    <div class="flex items-center justify-center">
+    <div class="flex flex-col items-center justify-center">
         <div class="nav flex items-center rounded-lg justify-between text-white mt-5 py-5 px-8 md:px-[10%] w-[90%] md:w-[70%] bg-[#792E29]">
             <div class="logo font-bold">
                 <p>Liftoff</p>
@@ -21,8 +21,24 @@
                 <a href="">Rewards</a>
                 <a href="">FAQ</a>
             </div>
-            <div class="borderHover cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
+            <div class="borderHover smooth cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
                 <p>RSVP Now!</p>
+            </div>
+        </div>
+        <div class="w-[100%] h-[90vh] flex items-center justify-center flex-col gap-5 ">
+            <div class="first w-[90%] max-w-[500px]">
+                <div class="text flex text-center items-center justify-center flex-col gap-2">
+                    <p class="sub italic text-sm tracking-tighter opacity-70">"t minus three, t minus two, t minus one"</p>
+                    <p class="title bold text-7xl font-bold tracking-tighter">LIFT OFF!</p>
+                    <p class="tracking-tighter">
+                        you ship: anything that flies <br>
+                        we ship: drones, rc planes, hardware to build
+                    </p>
+                </div>
+                <div class="buttons gap-3 w-[100%] mt-8 items-center justify-center flex">
+                    <div class="rsvp py-2 smooth px-5 border-1 border-dashed hover:bg-[#792E29] hover:text-white hover:px-7 hover:italic">RSVP Now</div>
+                    <p class="px-2 hover:underline smooth hover:italic">Learn more</p>
+                </div>
             </div>
         </div>
     </div>
@@ -31,7 +47,7 @@
     *{
         font-family: 'Geist Mono';
     }
-    .borderHover{
+    .smooth{
         transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .borderHover:hover {
