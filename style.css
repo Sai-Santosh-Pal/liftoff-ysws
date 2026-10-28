@@ -1,0 +1,11 @@
+.rotate {
+    animation: rotate 0.2s linear forwards;
+    animation-timeline: view();
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes rotate {
+    to {
+        transform: rotateZ(50deg);
+    }
+}

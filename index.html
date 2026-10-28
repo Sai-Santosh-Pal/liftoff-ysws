@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#FFF0F0]">
+<body class="bg-[#FFF0F0] overflow-x-hidden">
     <div class="flex flex-col items-center justify-center">
         <div class="nav flex items-center rounded-lg justify-between text-white mt-5 py-5 px-8 md:px-13 w-[90%] max-w-[900px] bg-[#792E29]">
             <div class="logo font-bold">
                 <p>Liftoff</p>
             </div>
             <div class="self-center hidden lg:flex ml-13 links w-[50%] max-w-[300px] justify-between">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Rewards</a>
-                <a href="">FAQ</a>
+                <a class="hover:text-white hover:italic" href="">Home</a>
+                <a class="hover:text-white hover:italic" href="">About</a>
+                <a class="hover:text-white hover:italic" href="">Rewards</a>
+                <a class="hover:text-white hover:italic" href="">FAQ</a>
             </div>
             <div class="borderHover smooth cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
                 <p>RSVP Now!</p>
@@ -28,10 +29,10 @@
         <div class="w-[100%] h-[90vh] flex items-center justify-center flex-col gap-5 ">
             <div class="first w-[90%] max-w-[700px]">
                 <div class="text flex text-center items-center justify-center flex-col gap-2">
-                    <p class="sub italic md:text-xl text-sm tracking-tighter opacity-70">"t minus three, t minus two, t minus one"</p>
-                    <p class="title bold md:text-9xl text-7xl font-bold tracking-tighter text-[#120C0B]">LIFT OFF!</p>
-                    <p class="tracking-tighter">
-                        you ship: anything that flies <br>
+                    <p class="sub italic md:text-xl text-sm opacity-70">"t minus three, t minus two, t minus one"</p>
+                    <p class="title bold md:text-9xl text-7xl font-bold text-[#120C0B]">LIFT OFF!</p>
+                    <p class="tracking-tigjt">
+                        you ship: anything that flies<br>
                         we ship: drones, rc planes, hardware to build
                     </p>
                 </div>
@@ -39,14 +40,43 @@
                     <div class="rsvp py-2 smooth px-5 border-1 border-dashed hover:bg-[#792E29] md:text-xl md:px-7 md:hover:px-10 md:py-2 hover:text-white hover:px-7 hover:italic">RSVP Now</div>
                     <p class="px-2 cursor-pointer hover:underline smooth hover:italic">Learn more</p>
                 </div>
+                <div class="mt-20 rotate drone flex w-[100%] items-center justify-center md:hidden">
+                    <img src="assets/drone.svg" class="max-w-[300px]" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-[100%] px-2 md:px-10  h-screen flex items-center justify-center"> 
+        <div class="h-[80%] bg-[#792E29] text-white items-center justify-center flex flex-col gap-2 md:max-w-[95%] w-[100%]">
+            <div class="first w-[88%] flex items-center justify-center flex-col h-[50%]">
+                <p class="text-3xl font-bold self-start">what is #liftoff?</p>
+                <p class="text-base mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum aut porro voluptatibus ducimus laudantium rerum animi, eius quibusdam sequi at expedita harum nemo quisquam! Velit doloremque nemo nam ratione.
+                Iusto dolore tenetur vitae fugiat temporibus enim optio atque suscipit harum ipsum, hic consequuntur eos. Qui, similique sed quisquam amet, reprehenderit minima doloremque nisi doloribus dolor pariatur eos, maxime expedita?</p>
+            </div>
+            <div class="second w-[97%] h-[50%]">
+                <img src="assets/what-is.webp" class="hover:rounded-[0px] scale-[0.95] hover:scale-[0.98] rounded-xl" alt="" srcset="">
             </div>
         </div>
     </div>
 </body>
 <style>
     *{
-        font-family: 'Geist Mono';
+        font-family: 'Geist Pixel';
+        transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
+
+    .drone > img:hover {
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: hoverSpin 0.2s linear infinite;
+    }
+    @keyframes hoverSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
     .smooth{
         transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
