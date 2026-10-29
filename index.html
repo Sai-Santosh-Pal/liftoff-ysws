@@ -22,7 +22,7 @@
                 <a class="hover:text-white hover:italic" href="">Rewards</a>
                 <a class="hover:text-white hover:italic" href="">FAQ</a>
             </div>
-            <div class="borderHover smooth cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
+            <div class="hover:px-7 hover:italic hover:bg-[#792E29] changebg hover:text-white md:hover:px-10 smooth cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
                 <p>RSVP Now!</p>
             </div>
         </div>
@@ -46,20 +46,26 @@
             </div>
         </div>
     </div>
-    <div class="w-[100%] px-2 md:px-10  h-screen flex items-center justify-center"> 
-        <div class="h-[80%] bg-[#792E29] text-white items-center justify-center flex flex-col gap-2 md:max-w-[95%] w-[100%]">
-            <div class="first w-[88%] flex items-center justify-center flex-col h-[50%]">
+    <div class="w-[100%] mb-10 px-2 md:px-10 flex items-center justify-center"> 
+        <div class="py-10 bg-[#792E29] lg:px-20 md:py-20 lg:py-20 lg:flex-row text-white items-center lg:justify-evenly justify-center flex flex-col gap-2 lg:max-w-[85%] w-[100%]">
+            <div class="first w-[88%] lg:w-[50%] flex items-center justify-center flex-col h-[50%]">
                 <p class="text-3xl font-bold self-start">what is #liftoff?</p>
                 <p class="text-base mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum aut porro voluptatibus ducimus laudantium rerum animi, eius quibusdam sequi at expedita harum nemo quisquam! Velit doloremque nemo nam ratione.
+                Iusto dolore tenetur vitae fugiat temporibus enim optio atque suscipit harum ipsum, hic consequuntur eos. Qui, similique sed quisquam amet, reprehenderit minima doloremque nisi doloribus dolor pariatur eos, maxime expedita?</p><p class="text-base mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum aut porro voluptatibus ducimus laudantium rerum animi, eius quibusdam sequi at expedita harum nemo quisquam! Velit doloremque nemo nam ratione.
                 Iusto dolore tenetur vitae fugiat temporibus enim optio atque suscipit harum ipsum, hic consequuntur eos. Qui, similique sed quisquam amet, reprehenderit minima doloremque nisi doloribus dolor pariatur eos, maxime expedita?</p>
             </div>
-            <div class="second w-[97%] h-[50%]">
-                <img src="assets/what-is.webp" class="hover:rounded-[0px] scale-[0.95] hover:scale-[0.98] rounded-xl" alt="" srcset="">
+            <div class="second mt-8 w-[100%] lg:w-[50%] px-5 md:px-0 bg-red-10 flex justify-center items-center lg:ml-15  justify-center">
+                <img src="assets/what-is.webp" class="cursor-pointer hover:rounded-[0px] rounded-xl" alt="" srcset="">
             </div>
         </div>
     </div>
 </body>
 <style>
+    .nav:has(.changebg:hover) {
+        background-color: transparent;
+        color: #792E29;
+        border: dashed 1px #792E29;
+    }
     *{
         font-family: 'Geist Pixel';
         transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
