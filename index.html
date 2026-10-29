@@ -59,6 +59,33 @@
             </div>
         </div>
     </div>
+    <div class="w-[100%] md:my-40 mb-20 gap-10 lg:flex-row flex flex-col items-center justify-center">
+        <div class="hidden lg:block overflow-hidden lg:w-[40%] w-[95%]">
+            <img class="w-[100%]  cursor-pointer hover:rounded-[0px] rounded-xl" src="assets/faq.jpg" alt="" srcset="">
+        </div>
+        <div class="py-10 lg:max-w-[800px] lg:py-20 lg:px-10 items-center justify-center flex flex-col border-1 border-dashed border-[#792E29] mx-5">
+            <div class="title">
+            <p class="text-4xl font-bold">FAQs</p>
+        </div>
+        <div class="info px-6 mt-7">
+            <div class="q1 mt-2">
+                <p class="question font-bold">Q. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio, obcaecati qui, quis ad et suscipit nostrum, sequi quas officia aut earum eligendi odio. Iste nihil sint alias enim autem!</p>
+            </div>
+            <div class="q1 mt-2">
+                <p class="question font-bold">Q. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio, obcaecati qui, quis ad et suscipit nostrum, sequi quas officia aut earum eligendi odio. Iste nihil sint alias enim autem!</p>
+            </div>
+            <div class="q1 mt-2">
+                <p class="question font-bold">Q. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio, obcaecati qui, quis ad et suscipit nostrum, sequi quas officia aut earum eligendi odio. Iste nihil sint alias enim autem!</p>
+            </div>
+        </div>
+    </div>
+    <div class="lg:hidden overflow-hidden lg:w-[40%] w-[95%]">
+        <img class="w-[100%]  cursor-pointer hover:rounded-[0px] rounded-xl" src="assets/faq.jpg" alt="" srcset="">
+    </div>
+    </div>
 </body>
 <style>
     .nav:has(.changebg:hover) {
@@ -66,6 +93,19 @@
         color: #792E29;
         border: dashed 1px #792E29;
     }
+    .drone > img {
+        filter: sepia(0) contrast(100%) saturate(100%) brightness(100%);
+
+    }
+    img {
+        filter: sepia(1) contrast(130%) saturate(120%) brightness(90%);
+    }
+
+    img:hover {
+        filter: sepia(0);
+        scale: 1.02;
+    }
+
     *{
         font-family: 'Geist Pixel';
         transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
