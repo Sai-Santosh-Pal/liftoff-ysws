@@ -10,37 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[white] text-black overflow-x-hidden">
+<body class="bg-[#FFF0F0] text-black overflow-x-hidden">
     <div class="flex flex-col items-center justify-center">
-        <div class="nav flex items-center justify-between text-black mt-6 pb-5 px-10 md:px-20 w-[90%] lg:max-w-[70%] border-b-[0.1px] border-solid border-stone-200">
+        <div class="nav flex items-center justify-between text-black mt-6 py-5 px-10 md:px-20 w-[90%] lg:max-w-[70%] text-white bg-[#792E29] rounded-lg ">
             <div class="logo font-bold">
                 <p class="">Liftoff</p>
             </div>
             <div class="self-center hidden lg:flex ml-13 links w-[50%] max-w-[300px] justify-between">
-                <a class="hover:text-black hover:italic" href="">Home</a>
-                <a class="hover:text-black hover:italic" href="">About</a>
-                <a class="hover:text-black hover:italic" href="">Rewards</a>
-                <a class="hover:text-black hover:italic" href="">FAQ</a>
+                <a class="hover:text-white hover:italic" href="">Home</a>
+                <a class="hover:text-white hover:italic" href="">About</a>
+                <a class="hover:text-white hover:italic" href="">Rewards</a>
+                <a class="hover:text-white hover:italic" href="">FAQ</a>
             </div>
-            <div class="hover:text-white hover:italic changebg hover:text-black bg-[#283A8E] smooth cta  text-white font-bold text-center cursor-pointer text-[#fff] py-3 px-10 border-1 border-solid hover:bg-[#D0021B] hover:skew-x-[-10deg]">
+            <div class="hover:text-white hover:italic changebg hover:text-black bg-[#F9E1D9] smooth cta font-bold text-center cursor-pointer text-[#792E29] py-3 px-10 border-1 border-solid hover:bg-[#792E29] hover:skew-x-[-10deg]
+            hover:px-15">
                 <p>RSVP Now!</p>
             </div>
         </div>
-        <div class="w-[100%] h-[90vh] flex items-center justify-center flex-col gap-5 ">
-            <div class="flex items-center justify-center gap-4 w-[100%] mb-20">
-                <div class="bg-[#D0021B] flex items-center justify-center p-3 rounded-[100px] h-20 w-20">
-                    <img src="assets/drone-horizontal.svg" alt="" srcset="">
+        <div class="w-[100%] h-[80vh] mb-20 flex items-center justify-center flex-col gap-5 ">
+            <div class="icons-box hidden md:flex items-center justify-center gap-4 w-[100%] mb-20">
+                <div class="absolute lg:right-70 p-5 lg:w-25 lg:h-25 right-40 top-70 rotate-[20deg] bg-[#792E29] flex items-center justify-center p-3 rounded-[100px] h-20 w-20">
+                    <img src="assets/drone.svg" alt="" srcset="">
                 </div>
-                <div class="bg-[#283A8E] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
+                <div class="bg-[#792E29] lg:left-70 lg:w-25 lg:h-25 absolute top-70 left-40 rotate-[-20deg] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
                     <img src="assets/plane.svg" alt="" srcset="">
                 </div>
-                <div class="bg-[#D0021B] flex items-center justify-center p-5 rounded-[100px] h-20 w-20">
-                    <img src="assets/charger.svg">
-                </div>
-                <div class="bg-[#283A8E] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
+                <div class="bg-[#792E29] lg:left-30 lg:w-25 lg:h-25 p-5 flex absolute top-100 left-10 items-center justify-center rounded-[100px] h-20 w-20">
                     <img src="assets/battery.svg">
                 </div>
-                <div class="bg-[#D0021B] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
+                <div class="bg-[#792E29] lg:right-30 lg:w-25 lg:h-25 p-5 lg:p-6 flex absolute top-100 right-10 items-center justify-center rounded-[100px] h-20 w-20">
                     <img class="ml-[7px]" src="assets/propeller.svg">
                 </div>
             </div>
@@ -54,31 +52,17 @@
                     </p>
                 </div>
                 <div class="buttons gap-5 w-[100%] mt-8 items-center justify-center flex">
-                    <div class="hover:text-white hover:italic changebg hover:text-black bg-[#283A8E] smooth cta  text-white font-bold text-center cursor-pointer text-[#fff] py-3 px-10 border-1 border-solid hover:bg-[#D0021B] hover:skew-x-[-10deg]">
+                    <div class="hover:text-white hover:italic changebg hover:text-white bg-[#F9E1D9] smooth cta font-bold text-center cursor-pointer text-[#792E29] py-3 px-10 border-1 border-solid hover:bg-[#792E29] hover:skew-x-[-10deg]
+                    hover:px-15">
                         <p>RSVP Now!</p>
                     </div>
                     <p class="px-2 cursor-pointer hover:underline smooth hover:italic">Learn more</p>
                 </div>
                 <div class="mt-20 rotate drone flex w-[100%] items-center justify-center md:hidden">
-                    <img src="assets/drone.svg" class="max-w-[300px]" alt="" srcset="">
+                    <img src="assets/drone-brown-colored.svg" class="max-w-[300px]" alt="" srcset="">
                 </div>
             </div>
-            <div class="row1 flex w-[100%] mt-20">
-                <div class="w-[16.6vw] h-5 border-y-1 bg-white"></div>
-                <div class="w-[16.6vw] h-5 border-y-1 bg-black"></div>
-                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
-                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
-                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
-                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
-            </div>
-            <div class="row2 flex w-[100%] mt-[-20px]">
-                <div class="w-[16.6vw] h-5 border-y-1 bg-black"></div>
-                <div class="w-[16.6vw] h-5 border-y-1 bg-white"></div>
-                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
-                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
-                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
-                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
-            </div>
+            
             <!-- <div class="h-5 absolute bottom-25 w-[100%] bg-[#D0021B]"></div> -->
         </div>
     </div>
@@ -126,12 +110,12 @@
 
 </body>
 <style>
-    /* .nav:has(.changebg:hover) {
-        background-color: #888;
-        color: white ;
-        border: dashed 1px #fff;
-    } */
-    /* .drone > img {
+    .nav:has(.changebg:hover) {
+        background-color: #F9E1D9;
+        color: #792E29;
+        border: dashed 1px #E5766D;
+    }
+    .drone > img {
         filter: sepia(0) contrast(100%) saturate(100%) brightness(100%);
     }
     img {
@@ -144,7 +128,7 @@
     img:hover {
         filter: sepia(0);
         scale: 1.02;
-    } */
+    }
 
     .title {
         font-family: 'VT323';
@@ -161,6 +145,19 @@
             transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
         animation: hoverSpin 0.2s linear infinite;
     }
+
+    .icons-box > div {
+        animation: hoverSpin 5s linear infinite;
+    }
+
+    .icons-box > div:hover {
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: hoverSpin .2s linear infinite;
+        margin: 10px;
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
     @keyframes hoverSpin {
     from {
         transform: rotate(0deg);
