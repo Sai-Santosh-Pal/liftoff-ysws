@@ -7,47 +7,83 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#FFF0F0] overflow-x-hidden">
+<body class="bg-[white] text-black overflow-x-hidden">
     <div class="flex flex-col items-center justify-center">
-        <div class="nav flex items-center rounded-lg justify-between text-white mt-5 py-5 px-8 md:px-13 w-[90%] max-w-[900px] bg-[#792E29]">
+        <div class="nav flex items-center justify-between text-black mt-6 pb-5 px-10 md:px-20 w-[90%] lg:max-w-[70%] border-b-[0.1px] border-solid border-stone-200">
             <div class="logo font-bold">
-                <p>Liftoff</p>
+                <p class="">Liftoff</p>
             </div>
             <div class="self-center hidden lg:flex ml-13 links w-[50%] max-w-[300px] justify-between">
-                <a class="hover:text-white hover:italic" href="">Home</a>
-                <a class="hover:text-white hover:italic" href="">About</a>
-                <a class="hover:text-white hover:italic" href="">Rewards</a>
-                <a class="hover:text-white hover:italic" href="">FAQ</a>
+                <a class="hover:text-black hover:italic" href="">Home</a>
+                <a class="hover:text-black hover:italic" href="">About</a>
+                <a class="hover:text-black hover:italic" href="">Rewards</a>
+                <a class="hover:text-black hover:italic" href="">FAQ</a>
             </div>
-            <div class="hover:px-7 hover:italic hover:bg-[#792E29] changebg hover:text-white md:hover:px-10 smooth cta bg-[#F9E1D9] cursor-pointer text-[#792E29] py-2 px-5">
+            <div class="hover:text-white hover:italic changebg hover:text-black bg-[#283A8E] smooth cta  text-white font-bold text-center cursor-pointer text-[#fff] py-3 px-10 border-1 border-solid hover:bg-[#D0021B] hover:skew-x-[-10deg]">
                 <p>RSVP Now!</p>
             </div>
         </div>
         <div class="w-[100%] h-[90vh] flex items-center justify-center flex-col gap-5 ">
+            <div class="flex items-center justify-center gap-4 w-[100%] mb-20">
+                <div class="bg-[#D0021B] flex items-center justify-center p-3 rounded-[100px] h-20 w-20">
+                    <img src="assets/drone-horizontal.svg" alt="" srcset="">
+                </div>
+                <div class="bg-[#283A8E] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
+                    <img src="assets/plane.svg" alt="" srcset="">
+                </div>
+                <div class="bg-[#D0021B] flex items-center justify-center p-5 rounded-[100px] h-20 w-20">
+                    <img src="assets/charger.svg">
+                </div>
+                <div class="bg-[#283A8E] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
+                    <img src="assets/battery.svg">
+                </div>
+                <div class="bg-[#D0021B] p-5 flex items-center justify-center rounded-[100px] h-20 w-20">
+                    <img class="ml-[7px]" src="assets/propeller.svg">
+                </div>
+            </div>
             <div class="first w-[90%] max-w-[700px]">
                 <div class="text flex text-center items-center justify-center flex-col gap-2">
-                    <p class="sub italic md:text-xl text-sm opacity-70">"t minus three, t minus two, t minus one"</p>
-                    <p class="title bold md:text-9xl text-7xl font-bold text-[#120C0B]">LIFT OFF!</p>
-                    <p class="tracking-tigjt">
+                    <p class="sub italic md:text-xl text-sm tracking-tight opacity-70">"t minus three, t minus two, t minus one"</p>
+                    <p class="title bold md:text-9xl text-9xl tracking-tighter font-bold text-[#120C0B]">LIFT OFF!</p>
+                    <p class="">
                         you ship: anything that flies<br>
                         we ship: drones, rc planes, hardware to build
                     </p>
                 </div>
-                <div class="buttons gap-3 w-[100%] mt-8 items-center justify-center flex">
-                    <div class="rsvp py-2 smooth px-5 border-1 border-dashed hover:bg-[#792E29] md:text-xl md:px-7 md:hover:px-10 md:py-2 hover:text-white hover:px-7 hover:italic">RSVP Now</div>
+                <div class="buttons gap-5 w-[100%] mt-8 items-center justify-center flex">
+                    <div class="hover:text-white hover:italic changebg hover:text-black bg-[#283A8E] smooth cta  text-white font-bold text-center cursor-pointer text-[#fff] py-3 px-10 border-1 border-solid hover:bg-[#D0021B] hover:skew-x-[-10deg]">
+                        <p>RSVP Now!</p>
+                    </div>
                     <p class="px-2 cursor-pointer hover:underline smooth hover:italic">Learn more</p>
                 </div>
                 <div class="mt-20 rotate drone flex w-[100%] items-center justify-center md:hidden">
                     <img src="assets/drone.svg" class="max-w-[300px]" alt="" srcset="">
                 </div>
             </div>
+            <div class="row1 flex w-[100%] mt-20">
+                <div class="w-[16.6vw] h-5 border-y-1 bg-white"></div>
+                <div class="w-[16.6vw] h-5 border-y-1 bg-black"></div>
+                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
+                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
+                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
+                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
+            </div>
+            <div class="row2 flex w-[100%] mt-[-20px]">
+                <div class="w-[16.6vw] h-5 border-y-1 bg-black"></div>
+                <div class="w-[16.6vw] h-5 border-y-1 bg-white"></div>
+                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
+                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
+                <div class="w-[16.6vw] h-5 bg-black border-y-1"></div>
+                <div class="w-[16.6vw] h-5 bg-white border-y-1"></div>
+            </div>
+            <!-- <div class="h-5 absolute bottom-25 w-[100%] bg-[#D0021B]"></div> -->
         </div>
     </div>
     <div class="w-[100%] mb-10 px-2 md:px-10 flex items-center justify-center"> 
-        <div class="py-10 bg-[#792E29] lg:px-20 md:py-20 lg:py-20 lg:flex-row text-white items-center lg:justify-evenly justify-center flex flex-col gap-2 lg:max-w-[85%] w-[100%]">
+        <div class="py-10 bg-[#D0021B] text-white lg:px-20 md:py-20 lg:py-20 lg:flex-row text-black items-center lg:justify-evenly justify-center flex flex-col gap-2 lg:max-w-[85%] w-[100%]">
             <div class="first w-[88%] lg:w-[50%] flex items-center justify-center flex-col h-[50%]">
                 <p class="text-3xl font-bold self-start">what is #liftoff?</p>
                 <p class="text-base mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum aut porro voluptatibus ducimus laudantium rerum animi, eius quibusdam sequi at expedita harum nemo quisquam! Velit doloremque nemo nam ratione.
@@ -58,6 +94,7 @@
                 <img src="assets/what-is.webp" class="cursor-pointer hover:rounded-[0px] rounded-xl" alt="" srcset="">
             </div>
         </div>
+        
     </div>
     <div class="w-[100%] md:my-40 mb-20 gap-10 lg:flex-row flex flex-col items-center justify-center">
         <div class="hidden lg:block overflow-hidden lg:w-[40%] w-[95%]">
@@ -86,24 +123,33 @@
         <img class="w-[100%]  cursor-pointer hover:rounded-[0px] rounded-xl" src="assets/faq.jpg" alt="" srcset="">
     </div>
     </div>
+
 </body>
 <style>
-    .nav:has(.changebg:hover) {
-        background-color: transparent;
-        color: #792E29;
-        border: dashed 1px #792E29;
-    }
-    .drone > img {
+    /* .nav:has(.changebg:hover) {
+        background-color: #888;
+        color: white ;
+        border: dashed 1px #fff;
+    } */
+    /* .drone > img {
         filter: sepia(0) contrast(100%) saturate(100%) brightness(100%);
-
     }
     img {
         filter: sepia(1) contrast(130%) saturate(120%) brightness(90%);
+    }
+    .second > img {
+        filter: contrast(130%) saturate(1);
     }
 
     img:hover {
         filter: sepia(0);
         scale: 1.02;
+    } */
+
+    .title {
+        font-family: 'VT323';
+        font-size: 10rem;
+        color: black !important;
     }
 
     *{
